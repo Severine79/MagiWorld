@@ -15,7 +15,7 @@ public abstract class Personnage {
 	public Personnage() {
 	}
 
-	public Personnage(int niveau, int vie, int force, int agilite, int intelligence, String nomJoueur) {
+	public Personnage(int niveau, int force, int agilite, int intelligence, String nomJoueur) {
 		if ((force + agilite + intelligence == niveau) && (niveau > 0 && niveau <= 100)) {
 			this.niveau = niveau;			
 			this.force = force;
