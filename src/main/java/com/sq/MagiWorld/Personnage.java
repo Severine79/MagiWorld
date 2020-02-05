@@ -40,6 +40,76 @@ public abstract class Personnage {
 	
 	//Methodes
 	
+	public abstract String attaqueBasique(Personnage personnage);
+	public abstract String attaqueSpeciale(Personnage personnage);
+
+	public int getNiveau() {
+		return niveau;
+	}
+
+	public void setNiveau(int niveau) {
+		this.niveau = niveau;
+	}
+
+	public int getVie() {
+		return vie;
+	}
+
+	public void setVie(int vie) {
+		this.vie = vie;
+	}
+
+	public int getVieInitiale() {
+		return vieInitiale;
+	}
+
+	public int getForce() {
+		return force;
+	}
+
+	public void setForce(int force) {
+		this.force = force;
+	}
+
+	public int getAgilite() {
+		return agilite;
+	}
+
+	public void setAgilite(int agilite) {
+		this.agilite = agilite;
+	}
+
+	public int getIntelligence() {
+		return intelligence;
+	}
+
+	public void setIntelligence(int intelligence) {
+		this.intelligence = intelligence;
+	}
+
+	public String getNomJoueur() {
+		return nomJoueur;
+	}
+
+	public void setNomJoueur(String nomJoueur) {
+		this.nomJoueur = nomJoueur;
+	}
+
+	public Attaque getAttaque() {
+		return attaque;
+	}
+
+	public void setAttaque(Attaque attaque) {
+		this.attaque = attaque;
+	}
+	 
+	@Override
+    public String toString() {
+        return "Woarg ! Je suis le "+nomJoueur+ " niveau: " + niveau + " je possède : " + vie + 
+        		" de vitalité" + force + " de force, " + agilite + " d'agilité et " + intelligence + "d'intelligence.";
+    }
+	 
+	
 }
 
 
